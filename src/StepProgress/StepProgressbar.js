@@ -7,7 +7,7 @@ function StepProgress() {
   const [tickMark, setTickMark] = useState([0,0,0]);
   const [progressCss, setProgressCss] = useState("line");
 
-  var tickUrl = "https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-512.png";
+  // var tickUrl = "https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-512.png";
 
   function handleProgress(num) {
     // setProgressCss("line fifty");
@@ -31,7 +31,7 @@ function StepProgress() {
       <div className={progressCss} style={{ progressCss }}>
         {stepNums.map((num) => (
             <div className="counterNumbers" onClick={() => handleProgress(num)}>
-                {tickMark[num-1] === 1 && <img className="image" src={tick}/>}
+                {tickMark[num-1] === 1 && <img className="image" src={tick} alt="tick"/>}
                 {console.log(tickMark)}
                 {tickMark[num-1] !== 1 && num}
             </div>

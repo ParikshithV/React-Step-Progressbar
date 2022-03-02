@@ -1,6 +1,5 @@
 import './App.css';
-import StepProgress from './StepProgressbar';
-
+import StepProgress from './StepProgress/StepProgressbar';
 function App() {
   return (
     <div className="App">
